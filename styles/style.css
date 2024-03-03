@@ -121,6 +121,57 @@ main {
 
 }
 
+/* feature style */
+
+.features {
+  display: flex;
+  margin-top: 130px;
+  gap: 100px;
+
+}
+
+.features .section-title {
+  border-left: 4px solid #FF900E;
+  padding-left: 20px;
+}
+
+.feature-content .card {
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.feature-img img{
+  margin-left: 90px;
+  height: 90%;
+}
+
+.ten-years-badge {
+  border-radius: 8px;
+  background: #FF900E;
+  color: #FFF;
+  width: 342px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+
+
+}
+
+.ten-years-badge h2{
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.ten-years-badge p{
+  font-size: 1.5rem;
+  font-weight: 500px;
+}
+
 /* fact cart style */
 
 .fact-cart-container {
@@ -141,21 +192,21 @@ main {
   margin-top: 5px;
 }
 
-.fact-cart-container .cart-stat{
-   font-weight: 600px;
-   font-size: 2.8rem;
-   color: #424242;
-   margin-top: 10px;
-   margin-bottom: 10px;
+.fact-cart-container .cart-stat {
+  font-weight: 600px;
+  font-size: 2.8rem;
+  color: #424242;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* sponsors style */
 
-.sponsors{
+.sponsors {
   text-align: center;
 }
 
-.sponsors-img-container{
+.sponsors-img-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -163,7 +214,7 @@ main {
   gap: 30px;
 }
 
-.sponsors-img-container img{
+.sponsors-img-container img {
   width: 165px;
 }
 
@@ -175,19 +226,33 @@ main {
   }
 
   nav,
-  .teams-container, .fact-cart-container, .sponsors-img-container {
+  .teams-container,
+  .fact-cart-container,
+  .sponsors-img-container, .features {
     flex-direction: column;
   }
 
   .teams-img-container {
     grid-template-columns: 1fr;
   }
-  
-  .teams-content, .fact-cart-container{
+
+  .teams-content,
+  .fact-cart-container {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .fact-cart-container{
+
+  .feature-img img{
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .ten-years-badge{
+    max-width: 300px;
+    position: static;
+  }
+
+  .fact-cart-container {
     gap: 20px;
   }
 }
@@ -197,7 +262,8 @@ main {
 @media screen and (min-width: 576px) and (max-width: 960px) {
 
   nav,
-  .teams-container, .sponsors-img-container {
+  .teams-container,
+  .sponsors-img-container, .features {
     flex-direction: column;
   }
 
